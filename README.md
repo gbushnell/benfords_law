@@ -1,4 +1,4 @@
-# benfords_law
+# Benford's Law
 Anomaly Detection in accounting transactions using Benford's Law.
 
 ## Implemented as per:
