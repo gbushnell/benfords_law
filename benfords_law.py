@@ -8,6 +8,8 @@ import pandas as pd
 def main(csv_file, alpha_level):
     # Probability of digit (d) occurring in nth position
     def calc_expected_probability(d: int, n: int) -> float:
+        # generalization of Benford's Law ~ Summation( log[ 1 + (1/(10k+d)] ) where d = digit, k = (10^(n-2), 10^(n-1))
+        # source: https://en.wikipedia.org/wiki/Benford%27s_law
         prob = 0
         if (d == 0) and (n == 1):
             prob = 0
